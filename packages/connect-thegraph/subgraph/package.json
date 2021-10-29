@@ -10,6 +10,11 @@
     "draw-schema": "./scripts/draw-schema.sh",
     "manifest": "scripts/build-manifest.sh mainnet",
     "manifest-staging": "env STAGING=true scripts/build-manifest.sh mainnet",
+
+    "manifest-harmony": "scripts/build-manifest.sh harmony",
+    "deploy-harmony": "scripts/deploy.sh aragon harmony",
+
+
     "manifest-rinkeby": "scripts/build-manifest.sh rinkeby",
     "manifest-rinkeby-staging": "env STAGING=true scripts/build-manifest.sh rinkeby",
     "manifest-xdai": "scripts/build-manifest.sh xdai",

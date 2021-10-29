@@ -1,0 +1,23 @@
+{
+  "network": "harmony",
+  "description": "Subgraph for Aragon organizations.",
+  "repository": "https://github.com/aragon/connect",
+  "ens": "0x843ddfab8406e752d03fa75dbb275070f368658d",
+  "ens_old": "0x843ddfab8406e752d03fa75dbb275070f368658d",
+  "DAOFactoryDataSources": [
+    {
+      "name": "DAOFactory",
+      "address": "0xc4ddbd0472c2688f5d278dafc02e66ee176c8de3",
+      "startBlock": "18448802"
+    }
+  ],
+  "APMFactoryDataSources": [
+    {
+      "name": "ApmRegistryFactory",
+      "address": "0xca834b3f404c97273f34e108029eed776144d324",
+      "startBlock": "18448802"
+    }
+  ],
+  "RegistryDataSources": [],
+  "KernelDataSources": []
+}
