@@ -24,5 +24,5 @@ echo '> Deploying subgraph: '$FULLNAME
 
 # Deploy subgraph
 graph deploy $FULLNAME \
-  --ipfs http://localhost/ipfs/ \
-  --node https://api.thegraph.com/deploy/ 
+  --ipfs http://localhost:5001/ipfs/ \
+  --node http://localhost:8001/ 
