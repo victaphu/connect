@@ -5,6 +5,8 @@
     "codegen": "rm -rf generated; graph codegen",
     "build": "rm -rf build; graph build",
     "manifest-harmony": "scripts/build-manifest.sh harmony",
+    "create-harmony": "graph create --node https://graph.t.hmny.io:8020 aragon/aragon-voting-harmony",
+    "delete-harmony": "graph remove --node https://graph.t.hmny.io:8020 aragon/aragon-voting-harmony",
     "deploy-harmony": "scripts/deploy.sh aragon voting harmony",
     "manifest-mainnet": "scripts/build-manifest.sh mainnet",
     "manifest-mainnet-staging": "env STAGING=true scripts/build-manifest.sh mainnet",
