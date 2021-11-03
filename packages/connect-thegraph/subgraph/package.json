@@ -10,11 +10,10 @@
     "draw-schema": "./scripts/draw-schema.sh",
     "manifest": "scripts/build-manifest.sh mainnet",
     "manifest-staging": "env STAGING=true scripts/build-manifest.sh mainnet",
-
-    "manifest-harmony": "scripts/build-manifest.sh harmony",
-    "deploy-harmony": "scripts/deploy.sh aragon harmony",
-
-
+    "manifest-harmony": "scripts/build-manifest.sh mainnet",
+    "create-graph-harmony": "graph create --node https://graph.t.hmny.io:8020 aragon/aragon-harmony",
+    "delete-graph-harmony": "graph remove --node https://graph.t.hmny.io:8020 aragon/aragon-harmony",
+    "deploy-harmony": "scripts/deploy.sh aragon mainnet",
     "manifest-rinkeby": "scripts/build-manifest.sh rinkeby",
     "manifest-rinkeby-staging": "env STAGING=true scripts/build-manifest.sh rinkeby",
     "manifest-xdai": "scripts/build-manifest.sh xdai",
@@ -29,8 +28,8 @@
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.19.0",
     "@graphprotocol/graph-ts": "^0.19.0",
+    "assemblyscript": "*",
     "graphqlviz": "^3.1.0",
     "mustache": "^4.0.1"
-  },
-  "dependencies": {}
+  }
 }

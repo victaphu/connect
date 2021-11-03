@@ -3,7 +3,8 @@
 # Arguments
 USER=$1
 NETWORK=$2
-
+echo $USER
+echo $NETWORK
 # Build manifest
 echo ''
 echo '> Building manifest file subgraph.yaml'
@@ -15,14 +16,15 @@ echo '> Generating types'
 graph codegen
 
 # Prepare subgraph name
-FULLNAME=$USER/aragon-$NETWORK
+FULLNAME=$USER/aragon-harmony
 if [ "$STAGING" ]; then
   FULLNAME=$FULLNAME-staging
 fi
 echo ''
 echo '> Deploying subgraph: '$FULLNAME
 
+NETWORK=mainnet
 # Deploy subgraph
 graph deploy $FULLNAME \
-  --ipfs http://localhost:5001/ipfs/ \
-  --node http://localhost:8001/ 
+  --ipfs http://graph.t.hmny.io:5001 \
+  --node https://graph.t.hmny.io:8020 
